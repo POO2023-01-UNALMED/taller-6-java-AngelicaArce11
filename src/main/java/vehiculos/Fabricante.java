@@ -30,7 +30,7 @@ public class Fabricante {
         return pais;
     }
 
-    public static String fabricaMayorVentas(){
+    public static Fabricante fabricaMayorVentas(){
         int max=-1;
         int indice=-1;
         for(int i=0;i<CantidadListafabrica.size();i++){
@@ -40,7 +40,7 @@ public class Fabricante {
             }
         }
 
-        return Fabricante.Listafabrica.get(indice);
+        return new Fabricante(Fabricante.Listafabrica.get(indice), null);
     }
 
     

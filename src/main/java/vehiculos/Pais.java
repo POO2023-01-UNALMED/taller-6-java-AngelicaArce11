@@ -18,7 +18,7 @@ public class Pais {
         return nombre;
     }
 
-    public static String paisMasVendedor(){
+    public static Pais paisMasVendedor(){
         int max=-1;
         int indice=-1;
         for (int i=0;i<Pais.CantidadListapaises.size();i++){
@@ -28,6 +28,6 @@ public class Pais {
             }
 
         }
-        return Pais.Listapaises.get(indice);
+        return new Pais(Pais.Listapaises.get(indice));
     }
 }
